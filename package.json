@@ -1,0 +1,9 @@
+{
+  "name": "carbonmate",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ai": "node server/ai-server.mjs",
+    "test": "node --test tests/"
+  }
+}

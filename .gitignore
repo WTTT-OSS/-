@@ -1,0 +1,38 @@
+# DevEco Studio and build outputs
+.idea/
+.hvigor/
+**/.preview/
+**/build/
+**/.cxx/
+**/node_modules/
+oh_modules/
+local.properties
+
+# Signing credentials and private configuration
+*.p12
+*.pfx
+*.pem
+*.key
+*.jks
+*.keystore
+signing-config.json
+.env
+.env.*
+!.env.example
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.log
+
+# Task-local review files
+work/
+ppt_work/
+ppt_tanban/
+render_new/
+render_orig/
+deploy/upload/
+*_out.txt
+# 构建产物与本地工具（不发布）
+outputs/
+skills/

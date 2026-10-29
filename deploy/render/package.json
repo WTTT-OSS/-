@@ -1,0 +1,13 @@
+{
+  "name": "carbonmate-ai-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "碳伴 CarbonMate 拍照识别网关（Render 部署版）",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

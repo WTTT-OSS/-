@@ -1,0 +1,2 @@
+# Obfuscation is disabled for the competition build until the API surface stabilizes.
+

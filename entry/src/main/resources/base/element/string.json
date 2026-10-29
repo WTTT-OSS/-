@@ -1,0 +1,9 @@
+{
+  "string": [
+    { "name": "module_desc", "value": "碳伴低碳生活助手" },
+    { "name": "EntryAbility_desc", "value": "碳伴应用入口" },
+    { "name": "EntryAbility_label", "value": "碳伴" },
+    { "name": "distributed_permission", "value": "仅在你创建或加入家庭空间后，向鸿蒙可信设备同步家庭低碳统计。不会同步照片、备注、AI识别草稿或密钥。" }
+  ]
+}
+

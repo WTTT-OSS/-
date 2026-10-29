@@ -1,0 +1,19 @@
+﻿services:
+  - type: web
+    name: carbonmate-ai-gateway
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: deploy/render
+    buildCommand: npm install --omit=dev
+    startCommand: node server.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: CARBONMATE_AI_CLIENT_TOKEN
+        sync: false
+      - key: DEEPSEEK_MODEL
+        value: deepseek-flash

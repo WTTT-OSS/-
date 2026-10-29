@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: carbonmate-ai-gateway
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install --omit=dev
+    startCommand: node server.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: DEEPSEEK_API_KEY
+        sync: false          # 在 Render 控制台填，不要提交到仓库
+      - key: CARBONMATE_AI_CLIENT_TOKEN
+        sync: false          # 至少 24 位，与 App 里填的保持一致
+      - key: DEEPSEEK_MODEL
+        value: deepseek-flash

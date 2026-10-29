@@ -1,0 +1,52 @@
+.carbon-line-icon {
+  display: inline-block;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+}
+
+.quest-icon .carbon-line-icon,
+.ledger-hub-icon .carbon-line-icon,
+.capability-icon .carbon-line-icon {
+  width: 21px;
+  height: 21px;
+}
+
+.life-icon .carbon-line-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.history-kind,
+.family-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.history-kind .carbon-line-icon,
+.family-kind .carbon-line-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.ledger-hub-note > span .carbon-line-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.capability-banner > i .carbon-line-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.family-empty > span .carbon-line-icon {
+  width: 27px;
+  height: 27px;
+}

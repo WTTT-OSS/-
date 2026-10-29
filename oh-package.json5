@@ -1,0 +1,12 @@
+{
+  "name": "carbonmate",
+  "version": "0.1.0",
+  "description": "CarbonMate - HarmonyOS low-carbon action recorder",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {},
+  "devDependencies": {
+    "@ohos/hvigor-ohos-plugin": "6.0.0"
+  }
+}
