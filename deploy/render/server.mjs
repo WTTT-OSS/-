@@ -107,12 +107,14 @@ const server = createServer(async (request, response) => {
     return response.end();
   }
 
-  if (!hasValidClientToken(request)) {
-    return send(response, 401, { error: '识别服务客户端令牌无效' }, allowedOrigin);
-  }
-
+  // 健康检查必须放在令牌校验之前：Render 的平台探针不带 Authorization 头，
+  // 放在后面会导致部署永远卡在 "Waiting for internal health check"。
   if (request.method === 'GET' && request.url === '/api/health') {
     return send(response, 200, { ready: Boolean(DEEPSEEK_API_KEY), provider: 'DeepSeek', model: MODEL }, allowedOrigin);
+  }
+
+  if (!hasValidClientToken(request)) {
+    return send(response, 401, { error: '识别服务客户端令牌无效' }, allowedOrigin);
   }
 
   if (request.method === 'GET' && request.url === '/') {
